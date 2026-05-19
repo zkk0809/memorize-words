@@ -34,7 +34,7 @@ function getBody(event) {
   }
 }
 
-export default async function handler(event, context) {
+export const handler = async (event, context) => {
   const method = event.httpMethod;
   const parts = parsePath(event);
   const qs = event.queryStringParameters || {};
