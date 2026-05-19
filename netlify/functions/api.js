@@ -147,5 +147,3 @@ export const handler = async (event, context) => {
     return error('Internal server error', 500, 'INTERNAL_ERROR');
   }
 };
-
-export const config = { path: "/api" };
